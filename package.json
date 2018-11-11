@@ -1,5 +1,5 @@
 {
-  "name": "schematics-react",
+  "name": "@nll/schematics-react",
   "version": "0.0.2",
   "description": "Schematics for react with typescript",
   "scripts": {
@@ -9,8 +9,8 @@
   "keywords": [
     "schematics"
   ],
-  "author": "",
-  "license": "MIT",
+  "author": "Brandon Blaylock (brandon@null.pub)",
+  "license": "MPL-2.0",
   "schematics": "./src/collection.json",
   "dependencies": {
     "@angular-devkit/core": "^0.8.3",
@@ -18,5 +18,15 @@
     "@angular-devkit/schematics-cli": "^0.8.3",
     "@types/node": "^8.0.31",
     "typescript": "^2.5.2"
-  }
+  },
+  "main": "src/collection.json",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baetheus/schematics-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/baetheus/schematics-react/issues"
+  },
+  "homepage": "https://github.com/baetheus/schematics-react#readme"
 }

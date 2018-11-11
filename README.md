@@ -3,7 +3,7 @@
 Install as schematics-react a dev dependency and schematics-cli globally:
 
 ```bash
-npm i -D schematics-react
+npm i -D @nll/schematics-react
 npm i -g @angular-devkit/schematics-cli
 ```
 
