@@ -1,6 +1,6 @@
 {
   "name": "@nll/schematics-react",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Schematics for react with typescript",
   "scripts": {
     "build": "tsc -p tsconfig.json",
