@@ -1,0 +1,20 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "component": {
+      "description": "Creates a react component with useState and typescript.",
+      "factory": "./component/index#component",
+      "schema": "./component/schema.json"
+    },
+    "stateless-component": {
+      "description": "Creates a react component with typescript.",
+      "factory": "./stateless-component/index#statelessComponent",
+      "schema": "./stateless-component/schema.json"
+    },
+    "environment": {
+      "description": "Creates a basic environment structure for use with dotenv and typescript.",
+      "factory": "./environment/index#environment",
+      "schema": "./environment/schema.json"
+    }
+  }
+}

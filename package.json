@@ -1,0 +1,22 @@
+{
+  "name": "schematics-react",
+  "version": "0.0.2",
+  "description": "Schematics for react with typescript",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "echo 'No Tests!'"
+  },
+  "keywords": [
+    "schematics"
+  ],
+  "author": "",
+  "license": "MIT",
+  "schematics": "./src/collection.json",
+  "dependencies": {
+    "@angular-devkit/core": "^0.8.3",
+    "@angular-devkit/schematics": "^0.8.3",
+    "@angular-devkit/schematics-cli": "^0.8.3",
+    "@types/node": "^8.0.31",
+    "typescript": "^2.5.2"
+  }
+}

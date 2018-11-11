@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "SchematicsInfernoTypescriptEnvironment",
+  "title": "Inferno Environment Options Schema",
+  "type": "object",
+  "properties": {
+    "path": {
+      "type": "string",
+      "format": "path",
+      "description": "The path to create the environments in.",
+      "default": "/src/environments"
+    }
+  }
+}
