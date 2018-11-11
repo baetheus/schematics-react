@@ -10,12 +10,12 @@ npm i -g @angular-devkit/schematics-cli
 Run the commands manually (path defaults to /src/components):
 
 ```bash
-schematics schematics-inferno:stateless-component --name=MyNewComponent --path=/src/my/custom/components
+schematics schematics-react:stateless-component --name=MyNewComponent --path=/src/my/custom/components
 ```
 
 Or add the following script to your package.json file:
 
-`"g:sc": "schematics schematics-inferno:stateless-component",`
+`"g:sc": "schematics schematics-react:stateless-component",`
 
 And then the command becomes:
 
