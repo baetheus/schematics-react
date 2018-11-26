@@ -1,4 +1,4 @@
-import * as React from 'react'; // This is needed to render jsx with inferno
+import * as React from 'react';
 
 import './<%= classify(name) %>.css';
 
