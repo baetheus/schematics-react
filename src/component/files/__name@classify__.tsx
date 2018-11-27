@@ -30,3 +30,5 @@ export const <%= classify(name) %>: React.SFC<<%= classify(name) %>Props> = ({ t
     </section>
   )
 };
+
+export default <%= classify(name) %>;

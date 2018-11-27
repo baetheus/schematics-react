@@ -15,3 +15,5 @@ export interface <%= classify(name) %>Props {
 export const <%= classify(name) %>: React.SFC<<%= classify(name) %>Props> = ({ text }) => (
   <span>{text}</span>
 );
+
+export default <%= classify(name) %>;
