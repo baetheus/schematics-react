@@ -1,17 +1,12 @@
 ### To Use
 
-Install as schematics-react a dev dependency and schematics-cli globally:
+Install as schematics-react and schematics-cli globally:
 
 ```bash
-npm i -D @nll/schematics-react
-npm i -g @angular-devkit/schematics-cli
+npm i -g @angular-devkit/schematics-cli @nll/schematics-react
 ```
 
 Run the commands manually (path defaults to /src/components):
-
-```bash
-schematics @nll/schematics-react:stateless-component --name=MyNewStatelessComponent --path=/src/my/custom/components
-```
 
 ```bash
 schematics @nll/schematics-react:component --name=MyNewComponent --path=/src/my/custom/components
@@ -20,14 +15,14 @@ schematics @nll/schematics-react:component --name=MyNewComponent --path=/src/my/
 Or add the following script to your package.json file:
 
 ```
-"g:sc": "schematics @nll/schematics-react:stateless-component",
-"g:c": "schematics @nll/schematics-react:component",
+"c": "schematics @nll/schematics-react:component",
+"p": "schematics @nll/schematics-react:component --path=src/pages",
 ```
 
 And then the commands becomes:
 
 ```bash
-npm run g:c -- --name=MyNewComponent
+npm run c -- --name=MyNewComponent
 
-npm run g:sc -- --name=MyNewStatelessComponent
+npm run p -- --name=MyNewPage
 ```

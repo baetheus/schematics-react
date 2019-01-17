@@ -20,12 +20,7 @@
     "typescript": "^2.5.2"
   },
   "main": "src/collection.json",
-  "devDependencies": {
-    "@types/jest": "^23.3.9",
-    "@types/react-test-renderer": "^16.0.3",
-    "jest": "^23.6.0",
-    "react-test-renderer": "^16.6.3"
-  },
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/baetheus/schematics-react.git"

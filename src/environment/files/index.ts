@@ -1,18 +1,10 @@
-import { env as dev } from './dev.env';
-import { env as mock } from './mock.env';
-import { env as prod } from './prod.env';
 import { Environment } from './environment';
+import { env as production } from './production.env';
+import { env as development } from './development.env';
+import { env as mock } from './mock.env';
 
-const getEnv = () => {
-  switch (process.env.NODE_ENV) {
-    case 'production':
-      return prod;
-    case 'development':
-      return dev;
-    case 'mock':
-    default:
-      return mock;
-  }
-};
-
-export const environment: Environment = getEnv();
+/* prettier-ignore */
+export const environment: Environment =
+  process.env.NODE_ENV === 'production' ? production :
+  process.env.NODE_ENV === 'mock' ? mock :
+  development;
