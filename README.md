@@ -26,3 +26,47 @@ npm run c -- --name=MyNewComponent
 
 npm run p -- --name=MyNewPage
 ```
+
+### VSCode Tasks
+
+```json
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "start",
+      "type": "npm",
+      "script": "start",
+      "isBackground": true,
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Create Component",
+      "type": "shell",
+      "command": "schematics @nll/schematics-react:component --path=${input:componentPath} --name=\"${input:componentName}\"",
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "componentName",
+      "description": "Please Enter A Component Name",
+      "default": "SomeComponent",
+      "type": "promptString"
+    },
+    {
+      "id": "componentPath",
+      "description": "Select Location",
+      "default": "src/components",
+      "type": "pickString",
+      "options": ["src/components", "src/pages"]
+    }
+  ]
+}
+```
