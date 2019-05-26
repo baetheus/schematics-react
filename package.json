@@ -1,9 +1,10 @@
 {
   "name": "@nll/schematics-react",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Schematics for react with typescript",
   "scripts": {
     "build": "tsc -p tsconfig.json",
+    "release": "npx standard-version",
     "test": "echo 'No Tests!'"
   },
   "keywords": [
@@ -13,11 +14,12 @@
   "license": "MPL-2.0",
   "schematics": "./src/collection.json",
   "dependencies": {
-    "@angular-devkit/core": "^0.8.3",
-    "@angular-devkit/schematics": "^0.8.3",
-    "@angular-devkit/schematics-cli": "^0.8.3",
-    "@types/node": "^8.0.31",
-    "typescript": "^2.5.2"
+    "@angular-devkit/core": "^7.3.9",
+    "@angular-devkit/schematics": "^7.3.9",
+    "@angular-devkit/schematics-cli": "^0.13.9",
+    "@types/node": "^10.0.0",
+    "standard-version": "^6.0.1",
+    "typescript": "^3.4.5"
   },
   "main": "src/collection.json",
   "devDependencies": {},
